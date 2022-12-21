@@ -1,6 +1,7 @@
 const todo = document.querySelector('.todo'); 
 const form = document.querySelector('.form');
 const info = document.querySelector('.info');
+const header = document.querySelector('.header');
 const filter = document.querySelector('.filter');
 const error = document.querySelector('.error');
 const tasks = todo.getElementsByTagName('li');
@@ -9,10 +10,12 @@ const filtered = todo.getElementsByClassName('filtered');
 const checkTasks = () => {
     if (tasks.length > 0) {
         info.classList.add('d-none');
+        header.classList.remove('d-none');
         filter.classList.remove('d-none');
     }
     else {
         info.classList.remove('d-none');
+        header.classList.add('d-none');
         filter.classList.add('d-none');
     }
 }
@@ -95,9 +98,11 @@ filter.addEventListener('keyup', e => {
     console.log("tasks",tasks.length)
 
     if(filtered.length === tasks.length){
-    error.classList.remove('d-none')
+    error.classList.remove('d-none');
+    header.classList.add('d-none');
     }
     else{
     error.classList.add('d-none');
+    header.classList.remove('d-none');
     }
 })

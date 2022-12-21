@@ -22,24 +22,27 @@
     <div class="container p-5">
         <h1 class="text-center">JUST DO IT.</h1>
         <br>
-        <div class="container col-md-4 col-sm-6">
-            <input type="text" name="filter" id="filter" placeholder="filter your tasks" class="form-control filter d-none">
+        <div class="container col-md-6 col-sm-8">
+            <input type="text" name="filter" id="filter" placeholder="filter your tasks"
+                class="form-control filter d-none" autocomplete="off">
         </div>
         <br>
-        <div class="container col-md-4 col-sm-6">
+        <div class="container col-md-6 col-sm-8">
 
-            <div class="text-danger text-center info">type in what you need to do..</div>
-            <div class="text-danger text-center error d-none">no match found..</div>
+            <div class="text-danger text-center info p-1">type in what you need to do..</div>
+            <div class="text-danger text-center header d-none p-1">your tasks..</div>
+            <div class="text-danger text-center error d-none p-1">no match found..</div>
 
-            <ul class="list-group text-left shadow todo">
+            <!-- todo list -->
+            <ul class="list-group text-left todo p-1">
             </ul>
 
 
         </div>
         <br>
-        <div class="container col-md-4 col-sm-6">
+        <div class="container col-md-6 col-sm-8">
             <form class="form">
-                <input type="text" placeholder="enter a task" class="form-control" name="task">
+                <input type="text" placeholder="enter a task" class="form-control" name="task" autocomplete="off">
             </form>
         </div>
 
