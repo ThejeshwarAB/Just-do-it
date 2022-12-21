@@ -20,26 +20,34 @@
 
 <body>
     <div class="container p-5">
+        
         <h1 class="text-center">JUST DO IT.</h1>
+
         <br>
+
+        <!-- filters existing tasks based on search string -->
         <div class="container col-md-6 col-sm-8">
             <input type="text" name="filter" id="filter" placeholder="filter your tasks"
                 class="form-control filter d-none" autocomplete="off">
         </div>
+
         <br>
         <div class="container col-md-6 col-sm-8">
 
+            <!-- when there are no tasks in the todo list -->
             <div class="text-danger text-center info p-1">type in what you need to do..</div>
+            <!-- when there are one or more tasks in the todo list-->
             <div class="text-danger text-center header d-none p-1">your tasks..</div>
+            <!-- when the search string is not found in the todo list-->
             <div class="text-danger text-center error d-none p-1">no match found..</div>
 
             <!-- todo list -->
             <ul class="list-group text-left todo p-1">
             </ul>
-
-
         </div>
         <br>
+
+        <!-- adds new task to todo list -->
         <div class="container col-md-6 col-sm-8">
             <form class="form">
                 <input type="text" placeholder="enter a task" class="form-control" name="task" autocomplete="off">
