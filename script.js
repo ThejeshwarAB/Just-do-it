@@ -96,7 +96,7 @@ form.addEventListener('submit', e => {
 
 filter.addEventListener('keyup', e => {
 
-    const term = filter.value.trim();
+    const term = filter.value.toLowerCase().trim();
     // filters tasks based on search string
     filterTasks(term); 
 
